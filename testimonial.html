@@ -71,10 +71,11 @@
 <!-- Topbar End -->
 
 
-    <!-- Navbar Start -->
+ <!-- Navbar Start -->
 <nav class="navbar navbar-expand-lg bg-white navbar-light sticky-top py-lg-0 px-lg-5 wow fadeIn" data-wow-delay="0.1s">
-    <a href="index.html" class="navbar-brand ms-4 ms-lg-0">
-        <h1 class="text-primary m-0 ms-4"><img class="me-3" src="img/icons/Webp.net-resizeimage.jpg" alt="Icon">DG Interior Design</h1> <!-- Ajusté el margen izquierdo en todos los dispositivos -->
+    <a href="index.html" class="navbar-brand ms-4 ms-lg-0 d-flex align-items-center">
+        <img src="img/icons/Logo E GD Interior Design Group - Octubre 2022.png" alt="Icon"> <!-- Imagen del logo -->
+        <h1 class="text-primary m-0">DG Interior Design</h1> <!-- Texto al lado del logo -->
     </a>
     <button type="button" class="navbar-toggler me-4" data-bs-toggle="collapse" data-bs-target="#navbarCollapse">
         <span class="navbar-toggler-icon"></span>
@@ -145,6 +146,100 @@
 </div>
 <!-- Testimonial End -->
         
+
+<!-- Clients Section -->
+<section id="clients" class="clients section">
+    <div class="container" data-aos="fade-up" data-aos-delay="100">
+      <div class="swiper init-swiper">
+        <!-- Contenedor de las imágenes del cliente -->
+        <h3 class="section-title">Nuestro Clientes</h3>
+        <div class="swiper-wrapper align-items-center">
+          <div class="swiper-slide"><img src="img/icons/logo mayrene.jpg" class="img-fluid" alt="Logo Mayrene"></div>
+          <div class="swiper-slide"><img src="img/icons/logo migel angel.png" class="img-fluid" alt="Logo Migel Angel"></div>
+          <div class="swiper-slide"><img src="img/icons/logobacc.jpeg" class="img-fluid" alt="Logo Bacc"></div>
+          <div class="swiper-slide"><img src="img/icons/logo relampago.jpg" class="img-fluid" alt="Logo Relámpago"></div>
+          <div class="swiper-slide"><img src="img/icons/logo nexa.png" class="img-fluid" alt="Logo Nexa"></div>
+          <div class="swiper-slide"><img src="img/icons/descarga.png" class="img-fluid" alt="Logo WB Strix"></div>
+          <div class="swiper-slide"><img src="img/icons/logo migel angel.png" class="img-fluid" alt="Logo Migel Angel"></div>
+          <div class="swiper-slide"><img src="img/icons/logobacc.jpeg" class="img-fluid" alt="Logo Bacc"></div>
+        </div>
+        <!-- Paginación -->
+        <div class="swiper-pagination"></div>
+      </div>
+    </div>
+  </section><!-- /Clients Section -->
+  
+  <!-- Incluir el CSS de Swiper -->
+  <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css">
+  
+  <!-- Script de Swiper -->
+  <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+  
+  <script>
+    // Inicializar Swiper
+    var swiper = new Swiper('.swiper', {
+      loop: true, // Habilitar loop
+      speed: 600, // Velocidad de transición
+      autoplay: {
+        delay: 5000, // Autoplay cada 5 segundos
+      },
+      slidesPerView: 'auto', // Ajusta la cantidad de slides que se muestran en pantalla
+      pagination: {
+        el: '.swiper-pagination', // Elemento de paginación
+        type: 'bullets', // Tipo de paginación (puntos)
+        clickable: true, // Permitir que se haga clic en los puntos
+      },
+      breakpoints: {
+        320: {
+          slidesPerView: 2, // Número de slides a mostrar en pantallas pequeñas
+          spaceBetween: 40, // Espacio entre slides
+        },
+        480: {
+          slidesPerView: 3, // Número de slides a mostrar en pantallas medianas
+          spaceBetween: 60,
+        },
+        640: {
+          slidesPerView: 4, // Número de slides a mostrar en pantallas más grandes
+          spaceBetween: 80,
+        },
+        992: {
+          slidesPerView: 6, // Número de slides a mostrar en pantallas grandes
+          spaceBetween: 120,
+        },
+      },
+    });
+  </script>
+  
+  <!-- Estilo para la sección de clientes -->
+  <style>
+    .clients .swiper-slide img {
+      opacity: 0.5;
+      transition: 0.3s;
+      filter: grayscale(100%);
+    }
+  
+    .clients .swiper-slide img:hover {
+      filter: none;
+      opacity: 1;
+    }
+  
+    .clients .swiper-pagination {
+      margin-top: 20px;
+      position: relative;
+    }
+  
+    .clients .swiper-pagination .swiper-pagination-bullet {
+      width: 12px;
+      height: 12px;
+      opacity: 1;
+      background-color: #B78D65;
+    }
+  
+    .clients .swiper-pagination .swiper-pagination-bullet-active {
+        background-color: #CCCCCC; /* Cambia el color del punto activo a un gris claro */
+    }
+  </style>
+  </section><!-- /Clients Section -->
 
     <!-- Footer Start -->
     <div class="container-fluid bg-dark text-body footer mt-5 pt-5 px-0 wow fadeIn" data-wow-delay="0.1s">

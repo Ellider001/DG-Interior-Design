@@ -752,3 +752,70 @@ h6,
 
 
 
+    .foto-zoom {
+        width: 100%; /* Hace que la imagen ocupe el 100% del contenedor */
+        max-width: 400px; /* Máximo de 400px en pantallas grandes */
+        height: auto; /* Mantiene la proporción de la imagen */
+        transition: transform 0.3s ease; /* Suaviza la animación */
+        cursor: pointer;
+        border-radius: 10px; /* Esquinas redondeadas para un mejor estilo */
+        margin: 0 auto; /* Centra la imagen en pantallas pequeñas */
+    }
+    
+    .foto-zoom:hover {
+        transform: scale(1.05); /* Zoom suave al pasar el mouse */
+    }
+    
+    /* Estilos para tablets (pantallas entre 768px y 1024px) */
+    @media (max-width: 1024px) {
+        .about .row {
+            flex-direction: column;
+        }
+    
+        .about .content {
+            order: 2;
+        }
+    
+        .about .foto-zoom {
+            order: 1;
+        }
+    }
+    
+    /* Estilos para teléfonos (pantallas menores a 768px) */
+    @media (max-width: 768px) {
+        .section-title {
+            font-size: 1.5rem; /* Tamaño más pequeño para el título en dispositivos pequeños */
+        }
+    
+        .about .row {
+            flex-direction: column;
+        }
+    
+        .about .content {
+            padding: 0 10px;
+        }
+    
+        .about .foto-zoom {
+            margin-bottom: 20px;
+        }
+    }
+
+
+/* Ajustes para el logo */
+.navbar-brand img {
+    height: 70px; /* Puedes ajustar esto para hacerlo más grande o más pequeño */
+    width: auto; 
+    object-fit: contain;
+    margin-right: 10px; /* Espacio entre la imagen y el texto */
+    vertical-align: middle; /* Alinea mejor el logo con el texto */
+}
+
+/* Alineación y tamaño del texto */
+.navbar-brand h1 {
+    display: inline-block;
+    font-size: 32px; /* Aumenta el tamaño del texto - Puedes probar con 36px o más si lo deseas */
+    margin: 0;
+    vertical-align: middle;
+    font-weight: bold; /* Hace que el texto se vea más fuerte */
+    --primary: #B78D65; /* Mismo color que antes, pero puedes cambiarlo si quieres */
+}
